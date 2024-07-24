@@ -18,7 +18,7 @@ const obtenerPorCedulaAxios = async (cedula) => {
 }
 const guardar = async (estudianteBody) => {
 
-    const data = axios.post(`http://localhost:8082/API/v1.0/Matricula/estudiantes`, estudianteBody).then(r => r.data);
+    const data = axios.post(`http://localhost:8082/API/v1.0/Matricula/estudiantes/hateoas`, estudianteBody).then(r => r.data);
     console.log(data);
     return data;
 

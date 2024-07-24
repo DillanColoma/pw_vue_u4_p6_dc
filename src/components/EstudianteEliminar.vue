@@ -5,10 +5,10 @@
         <section>
           <form class="form">
             <p type="Cédula">
-              <input type="text" />
+              <input type="text" v-model="cedula" />
             </p>
             <div class="botonEliminar">
-              <button>Borrar</button>
+              <button @click="eliminar">Borrar</button>
             </div>
           </form>
         </section>
@@ -17,6 +17,20 @@
   </template>
   
   <script>
+  import{eliminarFachada} from "../assets/clients/clienteEstudiante"
+  export default{
+    data(){
+      return{
+        cedula:null
+      }
+    },
+    methods:{
+      async eliminar(){
+        const data=await eliminarFachada(this.cedula);
+        console.log(data);
+      }
+    }
+  }
   </script>
   <style>
    .container{

@@ -3,26 +3,28 @@
     <div class="formulario">
       <header>Datos Estudiante</header>
       <section>
-        <p type="Nombre">
-          <input v-model="nombre" type="text" />
-        </p>
-        <p type="Apellido">
-          <input v-model="apellido" type="text" />
-        </p>
-        <p type="Cédula">
-          <input v-model="cedula" type="text" />
-        </p>
-        <p type="Género:">
-          <input v-model="genero" type="text" />
-        </p>
-        <p type="Fecha de Nacimiento:">
-          <input v-model="fecha" type="date" />
-        </p>
-        <div class="botonBuscar">
-          <button @click="consultar">Buscar</button>
-        </div>
-        <div class="botonActualizar">
-          <button @click="actualizar">Actualizar</button>
+        <div class="form">
+          <p type="Nombre">
+            <input v-model="nombre" type="text" />
+          </p>
+          <p type="Apellido">
+            <input v-model="apellido" type="text" />
+          </p>
+          <p type="Cédula">
+            <input v-model="cedula" type="text" />
+          </p>
+          <p type="Género:">
+            <input v-model="genero" type="text" />
+          </p>
+          <p type="Fecha de Nacimiento:">
+            <input v-model="fecha" type="date" />
+          </p>
+          <div class="botonBuscar">
+            <button @click="consultar">Buscar</button>
+          </div>
+          <div class="botonActualizar">
+            <button @click="actualizar">Actualizar</button>
+          </div>
         </div>
       </section>
     </div>
