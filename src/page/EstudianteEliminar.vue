@@ -1,9 +1,9 @@
 <template>
     <div class="container">
-      <div class="formulario">
+      <div >
         <header>Borrar Estudiante</header>
         <section>
-          <form class="form">
+          <form>
             <p type="Cédula">
               <input type="text" v-model="cedula" />
             </p>
@@ -32,7 +32,7 @@
     }
   }
   </script>
-  <style>
+<style scope>
    .container{
       display: flex;
       justify-content: center;

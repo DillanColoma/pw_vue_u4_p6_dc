@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-      <div class="formulario">
+      <div >
         <header>Borrar Estudiante</header>
         <section>
           <form class="form">
@@ -32,7 +32,7 @@
     }
   }
   </script>
-  <style>
+  <style scoped>
    .container{
       display: flex;
       justify-content: center;

@@ -1,7 +1,14 @@
 <template>
-  <h1>Bienvenidos a las UCE</h1>
+  <h1>Bienvenidos a la UCE</h1>
 </template>
+
 <script>
+export default{
+
+}
+
 </script>
+
 <style>
+
 </style>

@@ -1,9 +1,9 @@
 <template>
     <div class="container">
-      <div class="formulario">
+      <div >
         <header>Datos Estudiante</header>
         <section>
-          <form class="form">
+          <form >
             <p type="Nombre">
               <input v-model="nombre" type="text" />
             </p>
@@ -55,7 +55,7 @@
     },
   };
   </script>
-    <style>
+   <style scope>
   .container {
     display: flex;
     justify-content: center;

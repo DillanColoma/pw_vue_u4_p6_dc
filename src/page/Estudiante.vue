@@ -1,9 +1,9 @@
 <template>
     <div class="container">
-      <div class="formulario">
+      <div >
         <header>Datos Estudiante</header>
         <section>
-          <div class="form">
+          <div >
             <p type="Nombre">
               <input v-model="nombre" type="text" />
             </p>
@@ -46,6 +46,15 @@
         nombre: null,
       };
     },
+    created(){
+      console.log(this.$route)
+       console.log(this.$route.params.cedula);
+       if(this.$route.params.cedula !== 'vacio'){
+        console.log('Entro a la Api')
+        this.cedula = this.$route.params.cedula;
+        this.consultar();
+       }
+    },
     methods: {
       async consultar() {
         console.log(this.cedula);
@@ -78,7 +87,7 @@
     },
   };
   </script>
-  <style>
+<style scope>
   .container {
     display: flex;
     justify-content: center;
@@ -109,15 +118,7 @@
     outline: none;
     border-bottom: 2px solid #78788c;
   }
-  .form {
-    width: 300px;
-    height: 445px;
-    background-color: #e6e6e6;
-    border-radius: 10px;
-    padding: 25px 35px;
-    margin: 25px;
-    box-shadow: 0px 0px 30px 5px #000;
-  }
+
   
   button {
     width: 100px;

@@ -1,18 +1,17 @@
 <template>
-
-<router-view/>
-
+  <NavBar/>
+  <router-view />
 </template>
 
 <script>
-
 //import BienvenidoPage from './page/BienvenidoPage.vue'
+import NavBar from './components/NavBar'
 export default {
-  name: 'App',
+  name: "App",
   components: {
-   
-  }
-}
+    NavBar,
+  },
+};
 </script>
 
 <style>
