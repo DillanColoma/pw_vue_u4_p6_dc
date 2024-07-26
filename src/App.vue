@@ -1,5 +1,6 @@
 <template>
 
+<NavBar/>
 <router-view/>
 
 </template>
@@ -7,9 +8,11 @@
 <script>
 
 //import BienvenidoPage from './page/BienvenidoPage.vue'
+import NavBar from './page/NavBar.vue';
 export default {
   name: 'App',
   components: {
+    NavBar
    
   }
 }

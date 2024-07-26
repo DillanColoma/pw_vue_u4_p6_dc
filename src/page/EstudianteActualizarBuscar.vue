@@ -76,6 +76,15 @@ export default {
       console.log(data);
     },
   },
+  created(){
+      console.log(this.$route)
+       console.log(this.$route.params.cedula);
+       if(this.$route.params.cedula !== 'vacio'){
+        console.log('Entro a la Api')
+        this.cedula = this.$route.params.cedula;
+        this.consultar();
+       }
+    },
 };
 </script>
 <style>

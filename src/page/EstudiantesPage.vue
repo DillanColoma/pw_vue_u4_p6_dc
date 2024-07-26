@@ -1,19 +1,20 @@
-vue <template>
+<template>
   
   <h1>Pagina de Estudiantes</h1>
-    <Estudiante />
+    <EstudianteActualizarBuscar />
     <EstudianteEliminar  />
     <EstudianteRegistro />
 
 </template>
 
 <script>
- import Estudiante from '../components/Estudiante.vue'
+ import EstudianteActualizarBuscar from '../components/EstudianteActualizarBuscar.vue'
  import EstudianteEliminar from '../components/EstudianteEliminar.vue'
  import EstudianteRegistro from '../components/EstudianteRegistro.vue'
+
 export default {
     components: {
-    Estudiante,
+    EstudianteActualizarBuscar,
     EstudianteEliminar,
     EstudianteRegistro
   }
