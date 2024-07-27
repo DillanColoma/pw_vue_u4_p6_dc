@@ -39,6 +39,10 @@
         fecha: null,
       };
     },
+    created(){
+      console.log(this.$route)
+      
+    },
     methods: {
       async crear() {
         let fechaFinal = this.fecha + "T00:00:00";
